@@ -40,8 +40,10 @@ if [ $? -gt -1 ] && [ -n "$1" ] ; then
   # Done!
 else
 	if [ -n "$1" ]; then
+    # Error
     echo "Error: Version number $1 doesn't exist at $URL"
   else
+    # Error
     echo "Error: Needs version number on invoke"
   	echo "example $0 1.10"
   fi
